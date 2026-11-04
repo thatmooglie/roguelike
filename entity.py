@@ -51,6 +51,8 @@ class Entity:
         """
         Place entity at a new location. Handles moving across GameMap
         """
+        self.x = x
+        self.y = y
         if gamemap:
             if hasattr(self, "gamemap"):    # Possible uninitialized.
                 self.gamemap.entities.remove(self)
